@@ -3,14 +3,12 @@ layout: post
 comments: true
 title: 百度轻量OCR比赛
 excerpt: 取得了最终榜单第二名
-categories: Competition
-date: 2022-1-26 22:00:00
+categories: competition
+date: 2022-1-26 22:00:00 +0800
 ---
 
 >本文章已发布于百度PaddlePaddle官方公众号：[轻量级文字识别技术创新大赛亚军方案分享](https://mp.weixin.qq.com/s/awjyCLBGYXhSIpAtJSD4dQ)
 赛题链接：[传送门](https://aistudio.baidu.com/aistudio/competition/detail/75/0/leaderboard)
-
-[toc]
 
 对于一个机器学习任务，数据和模型是取得良好结果的两大关键因素，本次轻量级文本识别大赛也不例外。除此之外，我们还需要考虑实际应用场景的条件和限制对优化方案进行调整。
 
@@ -34,19 +32,19 @@ date: 2022-1-26 22:00:00
 
 ### 字符长度分布
 
-![char_length_train](../assets/220126_baidu_ocr_competition_char_length_train.png)
+![char-length-train](/assets/2022-01-26-baidu-ocr-competition-1.png)
 
-![char_length_val](../assets/220126_baidu_ocr_competition_char_length_val.png)
+![char-length-val](/assets/2022-01-26-baidu-ocr-competition-2.png)
 
 ### 图像尺寸分布
 
-![img_scale_train](../assets/220126_baidu_ocr_competition_img_scale_train.png)
+![img-height-train](/assets/2022-01-26-baidu-ocr-competition-3.png)
 
-![img_scale_val](../assets/220126_baidu_ocr_competition_img_scale_val.png)
+![img-height-val](/assets/2022-01-26-baidu-ocr-competition-4.png)
 
-![img_height_train](../assets/220126_baidu_ocr_competition_img_height_train.png)
+![img-scale-train](/assets/2022-01-26-baidu-ocr-competition-5.png)
 
-![img_height_val](../assets/220126_baidu_ocr_competition_img_height_val.png)
+![img-scale-val](/assets/2022-01-26-baidu-ocr-competition-6.png)
 
 ## 赛题分析与整体思路
 
@@ -193,7 +191,7 @@ class Albu:
 具体配置如下：
 
 ```yaml
-**Optimizer:
+Optimizer:
   name: Adam
   beta1: 0.9
   beta2: 0.999

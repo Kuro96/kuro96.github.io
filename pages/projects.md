@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
+includelink: true
 ---
 
 ## ULTRA LIGHT OCR COMPETITION

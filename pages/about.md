@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+includelink: true
 ---
 
-## xxx
+## NOT YET IMPLEMENTED!
