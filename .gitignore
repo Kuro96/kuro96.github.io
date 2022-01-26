@@ -4,5 +4,5 @@ _site
 .jekyll-metadata
 vendor
 Gemfile.lock
-.vscode/
-scripts/
+.vscode
+scripts

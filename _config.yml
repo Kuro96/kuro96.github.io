@@ -26,10 +26,20 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://oozorakuro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Kuro96
 
+cdn:
+    jsdelivr:
+        enabled: true
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  
+mathjax: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
