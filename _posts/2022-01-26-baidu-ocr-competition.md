@@ -7,7 +7,7 @@ categories: competition
 date: 2022-1-26 22:00:00 +0800
 ---
 
->本文章已发布于百度PaddlePaddle官方公众号：[轻量级文字识别技术创新大赛亚军方案分享](https://mp.weixin.qq.com/s/awjyCLBGYXhSIpAtJSD4dQ)
+>本文章已发布于百度PaddlePaddle官方公众号：[轻量级文字识别技术创新大赛亚军方案分享](https://mp.weixin.qq.com/s/awjyCLBGYXhSIpAtJSD4dQ)<br/>
 赛题链接：[传送门](https://aistudio.baidu.com/aistudio/competition/detail/75/0/leaderboard)
 
 对于一个机器学习任务，数据和模型是取得良好结果的两大关键因素，本次轻量级文本识别大赛也不例外。除此之外，我们还需要考虑实际应用场景的条件和限制对优化方案进行调整。
@@ -261,4 +261,5 @@ PostProcess:
    细节是一个老生常谈的问题，即使站在巨人的肩膀上，我们也需要考虑，巨人在那座山上以某一个站姿能看得很远，但是在这座山上这个姿势是否还是最好的呢？例如数据增强中对图像尺度的调整和添加模糊数据增强的先后顺序：在PaddleOCR的超轻量模型配置中，默认将模糊增强放在Resize之前，而我们在初期实验中对数据增强后的图像进行肉眼检验和实际训练的对比试验，发现：1. 模糊的强度是与图像尺寸相关的，同样的模糊核放在大图中效果区别甚微，但在小图中可能会导致字符无法被肉眼辨别、2. 模糊之后的高斯噪声显得很不自然，实验也证明将其放在噪声之后确实有提升。
 
 最后，我们开源了本次实验使用的代码，更多细节可以参考: [Github](https://github.com/YuxinZou/Ultra_light_OCR_No.4), [AI Studio](https://mp.weixin.qq.com/s/awjyCLBGYXhSIpAtJSD4dQ)
+
 以及arXiv：[Ultra Light OCR Competition Technical Report](https://arxiv.org/abs/2110.12623)

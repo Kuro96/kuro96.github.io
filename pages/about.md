@@ -5,4 +5,4 @@ permalink: /about/
 includelink: true
 ---
 
-## NOT YET IMPLEMENTED!
+## NOT YET IMPLEMENTED
