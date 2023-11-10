@@ -1,0 +1,5 @@
+baseURL: https://blog.kurolatz.xyz/
+languageCode: zh-cn
+title: Kurolatz's Blog
+theme: "PaperMod"
+paginate: 6
