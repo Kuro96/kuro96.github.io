@@ -3,3 +3,5 @@ languageCode: zh-cn
 title: Kurolatz's Blog
 theme: "PaperMod"
 paginate: 6
+
+enableEmoji: true
