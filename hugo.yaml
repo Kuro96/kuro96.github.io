@@ -39,8 +39,8 @@ params:
     disableHLJS: true
 
   homeInfoParams:
-    # Title: ""
-    # Content: ""
+    Title: "Kurolatz's Blog"
+    Content: "精进"
 
   socialIcons:
     - name: bilibili
@@ -56,10 +56,18 @@ enableEmoji: true
 
 menu:
   main:
+    - identifier: archives
+      name: '所有文章'
+      url: /archives/
+      weight: 10
     - identifier: categories
       name: 文章类别
       url: /categories/
-      weight: 10
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
 
 pygmentsUseClasses: false
 markup:
