@@ -47,6 +47,8 @@ params:
       url: "https://space.bilibili.com/478081"
     - name: github
       url: "https://github.com/Kuro96"
+    - name: douban
+      url: "https://www.douban.com/people/kuro96"
     - name: steam
       url: "https://steamcommunity.com/id/kurooz"
 
