@@ -2,7 +2,8 @@ baseURL: "https://blog.kurolatz.xyz/"
 title: "Kurolatz's Blog"
 paginate: 6
 theme: "PaperMod"
-languageCode: zh-cn
+hasCJKLanguage: true
+languageCode: zh-Hans-CN
 
 enableRobotsTXT: true
 buildDrafts: false
