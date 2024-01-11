@@ -39,7 +39,6 @@ with-fingerprint
 ```bash
 git config --global user.signingkey <GPG-KEY-ID>!  # 只使用子密钥
 git config --global commit.gpgsign true
-git config --global push.gpgsign true
 
 gpg -a --export <GPG-KEY-ID>!  # 只导出子公钥
 
