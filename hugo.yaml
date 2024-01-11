@@ -73,6 +73,10 @@ menu:
       name: 搜索
       url: /search/
       weight: 30
+    - identifier: repo
+      name: Github
+      url: https://github.com/Kuro96/kuro96.github.io
+      weight: 40
 
 pygmentsUseClasses: false
 markup:
