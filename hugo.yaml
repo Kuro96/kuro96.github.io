@@ -52,6 +52,8 @@ params:
       url: "https://www.douban.com/people/kuro96"
     - name: steam
       url: "https://steamcommunity.com/id/kurooz"
+    - name: rss
+      url: "index.xml"
 
   icpBeian: "沪ICP备2023031377号-1"
 
