@@ -37,7 +37,7 @@ with-fingerprint
 跟着[Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)和[Linux Foundation的GPG说明](https://docs.releng.linuxfoundation.org/en/latest/gpg.html)的指示很容易就完成了。值得注意的是说明中的`gpg2`在现在大抵已等价于`gpg`了（至少Archlinux如此），具体可`ls -lah | grep gpg`自行检验。同样地，这里只记录一些关键指令：
 
 ```bash
-git config --global user.signingkey <GPG-KEY-ID>！  # 只使用子密钥
+git config --global user.signingkey <GPG-KEY-ID>!  # 只使用子密钥
 git config --global commit.gpgsign true
 git config --global push.gpgsign true
 
@@ -46,7 +46,7 @@ gpg -a --export <GPG-KEY-ID>!  # 只导出子公钥
 [ -f ~/.bashrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.bashrc  # 确保远程登录你带GUI的主机时不会因无法弹出输入密码而报错
 ```
 
-值得一提的是，如果你和我一样使用子公密钥对进行签名，上述两处加备注的行最后记得添加`！`，表示只使用子公密钥对信息（不影响你的指纹信息）。
+值得一提的是，如果你和我一样使用子公密钥对进行签名，上述两处加备注的行最后记得添加`!`，表示只使用子公密钥对信息（不影响你的指纹信息）。
 
 ## Actions
 
