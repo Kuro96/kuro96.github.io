@@ -53,13 +53,16 @@ gpg -a --export <GPG-KEY-ID>!  # 只导出子公钥
 > GitHub Actions 是一种持续集成和持续交付 (CI/CD) 平台，可用于自动执行生成、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。[^gha]
 
 这部分[Github官方的说明](https://docs.github.com/en/actions)给的很详细了，照着quick start走一遍就差不多知道该如何写自己的action配置了。
+
 在[我的自动化部署配置](https://github.com/Kuro96/kuro96.github.io/blob/master/.github/workflows/hugo-deploy.yml)中，我使用了[easingthemes/ssh-deploy](https://github.com/easingthemes/ssh-deploy)（自建服务器）而不是[actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)（GitHub Pages）来部署我的博客，前者需要对linux（也可以是其他）服务器有一定的了解，【一种建议是】会使用[nginx](https://www.nginx.com/)和[acme.sh](https://github.com/acmesh-official/acme.sh)实现https网页的搭建；后者可以参考[GitHub的官方说明](https://pages.github.com/)。
 
 ## 关于这个博客的其他细节
 
 本博客基于[Hugo](https://gohugo.io/)和[PaperMod](https://adityatelange.github.io/hugo-PaperMod/)搭建。部署过程大量参考了[xen0n](https://github.com/xen0n/xen0n.github.io)的配置。
 其中有少量文章使用到了静态图片，我自己部署了[lsky-pro](https://github.com/lsky-org/lsky-pro)作为博客专用图床。
+
 此外，由于使用了大厂的云服务器，暂时不考虑CDN。（又不是不能用
+
 如果能帮到你构建自己的博客，那就再好不过了。
 
 [^pgp1]: [2021年，用更现代的方法使用PGP（上）](https://ulyc.github.io/2021/01/13/2021%E5%B9%B4-%E7%94%A8%E6%9B%B4%E7%8E%B0%E4%BB%A3%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%BF%E7%94%A8PGP-%E4%B8%8A/)
