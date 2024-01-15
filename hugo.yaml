@@ -56,6 +56,7 @@ params:
       url: "index.xml"
 
   icpBeian: "沪ICP备2023031377号-1"
+  moeBeian: "20240096"
 
 enableEmoji: true
 
