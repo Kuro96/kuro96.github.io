@@ -1,6 +1,6 @@
 baseURL: "https://blog.kurolatz.xyz/"
 title: "Kurolatz's Blog"
-paginate: 6
+pagination.pagerSize: 6
 theme: "PaperMod"
 hasCJKLanguage: true
 languageCode: zh-Hans-CN
@@ -9,6 +9,8 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+ignoreLogs: ["warning-goldmark-raw-html"]
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
