@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: 2023：自由漫步
-excerpt: 2023：自由漫步
+title: '2023: 自由漫步'
+excerpt: '2023: 自由漫步'
 categories: 年终总结
 date: 2023-12-29 19:00:00 +0800
 ---
