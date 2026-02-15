@@ -5,7 +5,7 @@ title: '2025: 一辆名为AI的泥头车创过'
 excerpt: '欸哟我草，这个丫丁怎么那么坏啊'
 categories: 年终总结
 date: '2026-02-16T02:31:17+08:00'
-draft: true
+draft: false
 ---
 
 ## 一些碎碎念
